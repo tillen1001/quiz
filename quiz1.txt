@@ -1,26 +1,18 @@
-<html>
-<head>
- <title>My Document</title>
- <script type="text/javascript">
-   
-    function myFunction(){
-    var  btn=document.createElement("BUTTON");
-    btn.innerHTML="Change this document";
-    document.body.appendChild(btn);
-    btn.addEventListener("click", change);                                                 
-  }
- function change() {
-   var header=document.getElementById("hello");
-   header.innerHTML = "CSIE@CGU";
-   var para = document.getElementById("hi");
-   para.innerHTML = "怎麼那麼棒！！.";
- }
- </script>
-</head>
-<body>
-  <button onclick="myFunction()">Try it</button>
-  <h1 id="hello">CGU</h1>
-  <p id="hi">好棒棒</p>
-</body>
-</head>
+<html> 
+<head>   
+  <title>My Document</title>   
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript">
+    function change(){     
+      $("#apple").html("CSIE@CGU");
+      $("#banana").html("怎麼那麼棒！！."); 
+    }
+  </script> 
+  </head> 
+  <body>   
+    <input type="button" value="Change this document." onclick="change()">   
+    <h1 id=apple>CGU</h1>   
+    <p id=banana>好棒棒</p> 
+  </body> 
+  </head> 
 </html>
